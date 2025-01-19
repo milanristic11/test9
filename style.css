@@ -1,0 +1,855 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*SCROLLBAR---------------------------------------------------------------------------------------------------*/
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    margin-right: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #232b2b83;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #232b2b;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-horizontal {
+    height: 8px;
+}
+
+/*SCROLLBAR---------------------------------------------------------------------------------------------------*/
+
+/*KARTICA1---------------------------------------------------------------------------------------------------*/
+.card1{
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    background-color: #f2fcff;
+    position: sticky;
+    top: 0;
+    font-family: "Inter", serif;
+} 
+
+.card1 > h1 {
+    -webkit-animation: slide-in-left 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-left 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    font-size: 350px;
+    width: 100%; 
+    text-align: justify;
+
+}
+
+@-webkit-keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+.milan{
+    font-weight: 700;
+    color: #232b2b;
+}
+
+.ristic{
+    font-weight: 300;
+    color: #3F4848;
+}
+
+.card1 > h5 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    color: #232b2b;
+    font-weight: 200;
+    font-size: 50px;
+    -webkit-animation: slide-in-left 6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-left 6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.card1 > p {
+    width: 50%;
+    height: 462px;
+    font-size: 35px;
+    font-weight: 200;
+    text-align: justify;
+    -webkit-animation: slide-in-top 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-top 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-in-top {
+    0% {
+      -webkit-transform: translateY(-1000px);
+              transform: translateY(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-top {
+    0% {
+      -webkit-transform: translateY(-1000px);
+              transform: translateY(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @media (max-width: 1370px) {
+    .card1{
+        width: 100%;
+    }
+
+    .card1 > h1 {
+        width: 90%;
+        font-size: 240px;
+        margin-bottom: 20px;
+        margin-bottom: 240px;
+        line-height: 0.9;
+    }
+
+    .card1 > h5 {
+        font-size: 40px;
+        margin-left: 15px;
+        margin-bottom: 210px;
+    }
+
+    .card1 > p {
+        width: 100%;
+        font-size: 40px;
+        height: auto;
+    }
+
+  }
+
+  @media (max-width: 768px) {
+    .card1{
+        width: 100%;
+    }
+
+    .card1 > h1 {
+        width: 90%;
+        font-size: 230px;
+        margin-bottom: 230px;
+        line-height: 0.9;
+        padding-bottom: 0 !important;
+     }
+
+    .card1 > h5 {
+        font-size: 40px;
+        margin-left: 15px;
+        margin-bottom: 210px !important;
+    }
+
+    .card1 > p {
+        width: 100%;
+        font-size: 30px;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .card1{
+        width: 100%;
+    }
+
+    .card1 > h1 {
+        width: 90%;
+        font-size: 150px;
+        margin-left: 20px;
+        padding-bottom: 130px;
+        line-height: 0.9;
+    }
+
+    .card1 > h5 {
+        font-size: 20px;
+        margin-bottom: 120px;
+        margin-left: 28px;
+    }
+
+    .card1 > p {
+        width: 100%;
+        font-size: 20px;
+        height: auto;
+    }
+}
+
+@media (max-width: 375px) {
+    .card1{
+        width: 100%;
+    }
+
+    .card1 > h1 {
+        width: 90%;
+        font-size: 120px;
+        margin-left: 20px;
+        padding-bottom: 20px;
+        line-height: 0.9;
+    }
+
+    .card1 > h5 {
+        font-size: 20px;
+        margin-bottom: 20px;
+        margin-left: 28px;
+    }
+
+    .card1 > p {
+        width: 100%;
+        font-size: 15px;
+        height: auto;
+    }
+}
+
+/*KARTICA1---------------------------------------------------------------------------------------------------*/
+
+/*KARTICA1.5---------------------------------------------------------------------------------------------------*/
+
+.card1-5 {
+    width: 100%;
+    height: 120vh;
+    background-color: #f2fcff;
+    position: sticky;
+    top: 0;
+    font-family: "Inter", serif;
+    padding: 40px; 
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+}
+
+.column1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.column2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.rectangle {
+    width: 925px;
+    height: 450px;
+    margin-bottom: 20px;
+    background-color: black; 
+    border-radius: 16px; 
+    transition: transform 0.3s ease-in-out;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.rectangle:hover{
+    transform: scale(1.02);
+}
+
+.godina{
+    text-align: justify;
+    font-family: "Inter", serif;
+    color: #c0c0c0;
+    font-size: 150px;
+    font-weight: 100;
+}
+
+.pasus > p{
+    font-size: 40px;
+    font-weight: 200;
+    margin-top: 50px;
+    color: #f2fcff;
+    text-align: left;
+    font-family: "Inter", serif;
+}
+
+@media (max-width: 480px) {
+    .card1-5 {
+        width: 100%;
+        display: flex;
+        justify-content: center; 
+        flex-direction: column;
+    }
+
+    .column1 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .column2 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        margin-bottom: 150px;
+    }
+
+    .rectangle {
+        width: 90%; /* Pravougaonici zauzimaju punu širinu */
+        height: 200px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .godina {
+        font-size: 50px; /* Manji font za naslove */
+    }
+
+    .pasus > p {
+        font-size: 10px; /* Smanji veličinu teksta */
+        margin-top: 30px;
+    }
+}
+
+
+/*KARTICA1.5---------------------------------------------------------------------------------------------------*/
+
+/*KARTICA2---------------------------------------------------------------------------------------------------*/
+
+.card2 {
+    width: 100%;
+    height: 120vh;
+    background-color: #282828;
+    color: #ffffff;
+    position: sticky;
+    top: 0;
+    font-family: "Inter", serif;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: flex-start; 
+    padding: 20px;
+}
+
+.card2 > p {
+    font-size: 60px;
+    font-weight: 300;
+    margin: 10px 0; 
+    text-align: left;
+    padding-top: 90px;
+    padding-bottom: 30px;
+}
+
+.klik{
+    opacity: 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;  
+    color: #f2fcff;
+    margin: 20px 0 200px 0;  
+}
+
+td {
+    border-bottom: 1px solid white;
+    text-align: left; 
+    padding: 8px; 
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    position: relative;
+}
+
+td > span {
+    font-size: 40px;
+    font-weight: 100;
+    opacity: 1; 
+    transition: transform 0.3s ease-in-out; 
+    padding: 0;
+}
+
+td:hover > span {
+    transform: translateX(20px);
+}
+
+.progress-container {
+    width: 70%;  
+    height: 15px; 
+    margin-left: 50px;
+    background-color: #f2fcff;
+    border-radius: 10px; 
+    overflow: hidden; 
+    transform: translateY(20px); 
+    opacity: 0; 
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+td:hover .progress-container {
+    opacity: 1; 
+    transform: translateY(0); 
+}
+
+.progress-bar {
+    width: 50%;  
+    height: 15px; 
+    background-color: #00FF80; 
+}
+
+
+@media (max-width: 480px) {
+
+    .card2 > p {
+        font-size: 50px;
+        margin-bottom: 0px;
+        margin-top: 0;
+    }
+
+    td {
+        margin: 0;
+    }
+
+    td:hover > span {
+        transform: none;
+    }
+
+    td > span {
+        font-size: 40px !important;
+        line-height: 0.9;
+    }
+
+    .progress-container{
+        opacity: 1;
+        margin-bottom: 50px; 
+    }
+
+    table {
+        width: 80%; 
+        margin-bottom: 250px; 
+        margin-top: 0;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .card2{
+        padding-bottom: 200px;
+    }
+
+    .card2 > p {
+        font-size: 50px;
+    }
+
+    td > span {
+        font-size: 35px;
+    }
+
+    td:hover > span {
+        transform: none;
+    }
+
+    table {
+        width: 90%;
+        margin-bottom: 100px;  
+    }
+
+    .progress-container {
+        width: 80%;  
+        opacity: 1;
+        margin-bottom: 50px; 
+    }
+
+    .progress-bar {
+        width: 80%;  
+    }
+
+}
+
+
+@media (max-width: 1370px) {
+    .card2 > p {
+        font-size: 70px;
+    }
+
+    td > span {
+        font-size: 50px;
+    }
+
+    td:hover > span {
+        transform: none;
+    }
+
+    table {
+        width: 90%; 
+        margin-bottom: 200px;
+        line-height: 0.9;
+    }
+
+    .progress-container {
+        width: 75%;  
+        opacity: 1;
+        margin-bottom: 50px; 
+    }
+
+    .progress-bar {
+        width: 75%; 
+    }
+
+}
+
+
+/*KARTICA2---------------------------------------------------------------------------------------------------*/
+
+/*KARTICA3---------------------------------------------------------------------------------------------------*/
+
+.card3{
+    width: 100%;
+    height: 120vh;
+    background-color: #f2fcff;
+    position: sticky;
+    top: 0;
+}
+
+.carousel-container {
+    position: relative;
+    justify-content: center;
+    width: 1500px;
+    height: 120vh;
+    overflow: hidden;
+    margin-top: 400px;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.carousel-container > p{
+    margin-top: 50px;
+    font-weight: 300;
+    font-size: 60px !important;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    margin-top: 50px;
+}
+
+.card {
+    width: 1450px; 
+    height: 700px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    margin-top: 0;
+    flex-shrink: 0;
+    font-size: 20px;
+    border-radius: 16px;
+}
+
+.carousel-arrow {
+    position: relative;
+    bottom: 0px; 
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    background-color: #d9dddf;
+    color: black;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.carousel-arrow:hover{
+    transform: scale(0.9);
+    background-color: #e9eff1;
+}
+
+.left-arrow {
+    left: 1200px;
+}
+
+.right-arrow {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    right: -1200px;
+}
+
+.carousel-container  > p{
+    font-family: "Inter", serif;
+    color: #5F6868;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1370px) {
+    .card3{
+        padding: 20px;
+        padding-right: 0;
+    }
+
+    .carousel-container {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .card {
+        width: 850px; 
+        height: 600px; 
+        font-size: 14px;
+    }
+
+    .carousel-arrow {
+        height: 80px;
+        width: 80px;
+        font-size: 16px;
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+    }
+
+    .left-arrow {
+        left: 75%; 
+    }
+    
+    .right-arrow {
+        right: -75%; 
+    }
+
+    .carousel-arrow:hover{
+        transform: none;
+        background-color: #d9dddf;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .card3{
+        padding: 20px;
+        padding-right: 0;
+        padding-bottom: 150px;
+    }
+
+    .carousel-container {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .card {
+        width: 650px; 
+        height: 500px; 
+        font-size: 14px;
+    }
+
+    .carousel-arrow {
+        height: 60px;
+        width: 60px;
+        font-size: 16px;
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+    }
+
+    .left-arrow {
+        left: 75%; 
+    }
+    
+    .right-arrow {
+        right: -75%; 
+    }
+
+    .carousel-arrow:hover{
+        transform: none;
+        background-color: #d9dddf;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .card3{
+        padding: 20px;
+        padding-right: 0;
+    }
+
+    .carousel-container {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .carousel-container > p {
+        font-size: 24px; 
+        margin-top: 20px;
+    }
+
+    .card {
+        width: 350px;
+        height: 500px; 
+        font-size: 12px;
+    }
+
+    .carousel-arrow {
+        height: 30px;
+        width: 30px;
+        font-size: 16px;
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+    }
+
+    .left-arrow {
+        left: 75%; 
+    }
+    
+    .right-arrow {
+        right: -75%; 
+        margin-bottom: 10px;
+    }
+
+    .carousel-arrow:hover{
+        transform: none;
+        background-color: #d9dddf;
+    }
+}
+
+@media (max-width: 345px) {
+    .card3{
+        padding: 20px;
+        padding-right: 0;
+    }
+
+    .carousel-container {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .carousel-container > p {
+        font-size: 24px; 
+    }
+
+    .card {
+        width: 280px;
+        height: 400px; 
+        font-size: 12px;
+    }
+
+    .carousel-arrow {
+        height: 30px;
+        width: 30px;
+        font-size: 16px;
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+    }
+
+    .left-arrow {
+        left: 75%; 
+    }
+    
+    .right-arrow {
+        right: -75%; 
+    }
+
+    .carousel-arrow:hover{
+        transform: none;
+        background-color: #d9dddf;
+    }
+}
+/*KARTICA3---------------------------------------------------------------------------------------------------*/
+
+.card4{
+    width: 100%;
+    height: 100vh;
+    background-color: #282828;
+    font-family: "Inter", serif;
+    color: #ffffff;
+    position: sticky;
+    top: 0;
+}
+
+.card4 > p{
+    padding-top: 50px !important;
+    margin-left: 410px;
+    font-weight: 300;
+    font-size: 60px;
+}
+
+.mail{
+    color: #3F4848;
+}
+
+.mail1{
+    font-size: 30px;
+}
+
+@media (max-width: 480px){
+
+    .card4{
+        width: 100%;
+    }
+
+    .card4 > p{
+        padding-top: 30px !important;
+        margin-left: 50px;
+        font-weight: 300;
+        font-size: 30px;
+    }
+
+    .mail1{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 770px){
+
+    .card4{
+        width: 100%;
+    }
+
+    .card4 > p{
+        padding-top: 30px !important;
+        margin-left: 50px;
+        font-weight: 300;
+        font-size: 30px;
+    }
+
+    .mail1{
+        font-size: 20px;
+    }
+}
